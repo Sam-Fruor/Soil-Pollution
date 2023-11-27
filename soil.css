@@ -4,11 +4,17 @@ body {
     padding: 0;
     width: 100%;
     color: bisque;
+    position: relative;
+}
+
+.cen {
+    text-align: center;
+    font-size: 2em;
 }
 
 h1 {
     color: white;
-    display:
+    font-size: 36px;
     /* justify-content: center; */
     /* align-items: center; */
     /* align-content: center;
@@ -39,8 +45,32 @@ header {
     row-gap: 10px;
 }
 
+.pic {
+    width: 330px;
+    height: 250px;
+    border-radius: 15%;
+    border: solid black 2.5px;
+    display: -ms-inline-grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    position: relative;
+}
+.epic {
+    margin-left: 65%;
+    width: 600px;
+    height: 400px;
+    border-radius: 15%;
+    border: solid black 2.5px;
+    display: -ms-inline-grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    position: relative;
+}
+
 .grid-container {
     display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-columns: 25%, 25%, 25%, 25%;
     /* grid-template-rows: repeat(3, 1fr); */
@@ -108,4 +138,44 @@ footer {
     /* position: fixed; */
     bottom: 0;
     width: 100%;
+}
+
+
+.container {
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 450px;
+    /* overflow: auto; */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: beige;
+    border: 1px solid #110d0d;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(31, 15, 15);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 270px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: white;
 }
